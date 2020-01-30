@@ -26,19 +26,24 @@
 				
 				<p>/* Este es un comentario  <br>
 					  de varias lineas <br>
-					  en PHP </p>";
+					  en PHP*/ </p>";
 			?>
 			
-		<h1>Creacoín Y Uso de Variables</h1>
+		<h1>Creación y Uso de Variables</h1>
 		
 			<?php
 		
-			
+				echo "<p>Para la creacion de variables en php se debe anteponer el simbolo <strong>$</strong> al nombre que le daremos a nuestra variable, la cual solo puede empezar por _ o letras (a-z, A-Z), se debe tener en cuenta que PHP diferencia entre MAYUSCULAS y minusculas</p>";
+				
+				echo "Ejemplo:";
 		
-			$nombre="Faver";
-			$apellido="Lopez";
+				echo '<p> <label style="color:green;"> Correcto:</label> $nombre_variable </p>';
+				echo '<p> <label style="color:red;"> Incorrecto:</label> $1_nombre_variable </p>';
 		
-			echo $nombre . " " . $apellido;
+				$nombre="Faver";
+				$apellido="Lopez";
+		
+				echo $nombre . " " . $apellido;
 		
 			?>
 	</body>
