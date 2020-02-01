@@ -65,10 +65,36 @@
 			<?php
 		
 				echo "Para utilizar una funcion de otro archivo del proyecto se utiliza la siguiente sintaxis.<br>";
-				echo "Se usa la palabra include ('nombre_archivo.php')<br>";
-				echo "De esta forma solo es necesario llamar la funcion en nuestro codigo de la siguiente forma: nombre_funcion();<br><br>";
+				echo "Se usa la palabra reservada <b>include</b> de la siguiente forma: <b>include ('nombre_archivo.php');</b><br>";
+				echo "De esta forma solo es necesario llamar la funcion en nuestro codigo de la siguiente forma: <b>nombre_funcion();</b><br><br>";
 					
 			?>
+		
+		<h1> Utilizacion de Variables Estaticas</h1>
+		
+			<?php
+				
+				function variable_estatica(){
+					
+					static $nombre_variable=0;
+					
+					$nombre_variable++;
+					
+					echo $nombre_variable . "<br>";
+				}
+		
+				variable_estatica();
+				variable_estatica();
+				variable_estatica();
+		
+			?>
+		
+		<P> Se utilizan las variables estaticas para que los valores de una variable en una funcion no pierda el valor asignado cuando la función termine de ejecutarse, de esta forma al volver a llamar la función mantendra el valor y no reiciara la variable al valor inicial.<br><br>
+		
+		Para hacer que una variable sea estatica utilizamos la palabra reservada "static" antes del nombre de la variable, de la siguiente forma: <b>"static $nombre_variable;"</b>.<br>
+		</P>
+		
+		
 	</body>
 
 </html>
