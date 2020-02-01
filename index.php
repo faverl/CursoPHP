@@ -46,6 +46,29 @@
 				echo $nombre . " " . $apellido;
 		
 			?>
+		
+		<h1>Utilizacion de Funciones</h1>
+		
+			<?php
+				echo "Para crear una funcion se utiliza la palabra reservada: function";
+		
+				echo "Ejemplo: <br><br>
+				
+				<b>function Nombre_Funcion(){<br><br>
+				
+					Escribe lo que realiza la funcion.<br><br>
+					
+				}</b>";
+			?>
+		<h1> Utilizacion de Funciones Externas</h1>
+		
+			<?php
+		
+				echo "Para utilizar una funcion de otro archivo del proyecto se utiliza la siguiente sintaxis.<br>";
+				echo "Se usa la palabra include ('nombre_archivo.php')<br>";
+				echo "De esta forma solo es necesario llamar la funcion en nuestro codigo de la siguiente forma: nombre_funcion();<br><br>";
+					
+			?>
 	</body>
 
 </html>
