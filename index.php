@@ -15,8 +15,11 @@
 				text-align: center;
 				color: aqua;
 				font-size: 3em;
-				font-weight: bold;
-				
+				font-weight: bold;	
+			}
+			
+			h1{
+				color: blue;
 			}
 			
 		</style>
@@ -85,7 +88,7 @@
 			<?php
 		
 				echo "Para utilizar una funcion de otro archivo del proyecto se utiliza la siguiente sintaxis.<br>";
-				echo "Se usa la palabra reservada <b>include</b> de la siguiente forma: <b>include ('nombre_archivo.php');</b><br>";
+				echo "Se usa la palabra reservada <b>include</b> de la siguiente forma: <b>include (\"nombre_archivo.php\");</b><br>";
 				echo "De esta forma solo es necesario llamar la funcion en nuestro codigo de la siguiente forma: <b>nombre_funcion();</b><br><br>";
 					
 			?>
@@ -173,6 +176,15 @@
 		
 				?>
 		
+		<h1>Declaracion y Usos de Constantes</h1>
+		
+			<p>Para declaracion de contantes utilizamos la siguiente estructura: "<b>define("NOMBRE_CONSTANTE", "valor constante", true o false(para indicar si es sensible a mayusculas y minusculas));</b>"</p>
+			<p>Las constantes no se coloca el signo <b>$</b> y el nombre siempre se escribe en <b>MAYUSCULAS</b>.</P>
+		
+		<?php
+			echo "<p class=\"resaltar\">Version de PHP: " . PHP_VERSION . "</p>";
+		?>
+			
 	</body>
 
 </html>
