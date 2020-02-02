@@ -7,7 +7,7 @@
 
 <body>
 	
-	<?php
+	<?php  //Creacion de clases
 	
 		class Vehiculo{
 
@@ -54,6 +54,11 @@
 	
 		echo $Mazda->get_color();
 	
+	?>
+	
+	<?php //POO Herencia de Clases
+		
+		
 	?>
 	
 	
