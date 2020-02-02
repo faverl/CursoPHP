@@ -3,6 +3,15 @@
 	
 	<head>
 		
+		<style>
+			.resaltar{
+				
+				color: red;
+				font-weight: bold;
+			}
+			
+		</style>
+		
 	</head>
 	
 	<body>
@@ -94,6 +103,64 @@
 		Para hacer que una variable sea estatica utilizamos la palabra reservada "static" antes del nombre de la variable, de la siguiente forma: <b>"static $nombre_variable;"</b>.<br>
 		</P>
 		
+		<h1> Manejo de STRING </h1>
+		
+			<h2> Escape de caracteres en un String </h2>
+
+				<p> Para usar comillas dentro de un string y que no las tenga en cuenta al momento de ejecutar el código, podemos utilizar el simbolo <b>"\"</b> para escapar la comilla, con este simbolo le indicamos que no tenga en cuenta el siguiente caracter del código.<br><br>
+
+				Ejemplo:  "echo <b>class=\"resaltar\"> Ejemplo de parrafo</b>"
+
+				</p>
+
+				<?php
+					echo "<p class=\"resaltar\"> Ejemplo de parrafo </p><br>"
+				?>
+			<h2> Comparacion de String con <b>strcmp</b> y <b>strcasecmp</b></h2>
+		
+				<p>Para comparar cadenas de string se pueden utilizar los siguientes comandos</p>
+					
+					<ul>
+						<li class="resaltar">strcmp</li>
+						<p>Se utiliza para comparar dos cadenas de string <b>teniendo</b> encuenta mayusculas y minusculas, como resultado devuelve <b>0</b> si coinciden y devuelve <b>-1</b> si no coinciden.</p>
+						
+						<li class="resaltar">strcasecmp</li>
+						
+						<p>Se utiliza para comparar dos cadenas de string <b>sin tener</b> encuenta mayusculas y minusculas, como resultado devuelve <b>0</b> si coinciden y devuelve <b>-1</b> si no coinciden.</p>
+						
+					</ul>
+		
+				<?php
+						
+					$var1="Hola";
+					$var2="hola";
+		
+					$resultado=strcmp($var1, $var2);
+					echo "El resultado con <b>strcmp</b> es: " . strcmp($var1, $var2) . "<br>";
+		
+					if($resultado==0){
+						
+						echo "<p> Son Iguales </p>";
+					}
+					else if($resultado==-1){
+						
+						echo "<p> No son Iguales</p>";
+					}
+					
+					$resultado2=strcasecmp($var1, $var2);
+		
+					echo "El resultado con <b>strcasecmp</b> es: " . strcasecmp($var1, $var2) . "<br>";
+		
+					if($resultado2==0){
+						
+						echo "<p> Son Iguales </p>";
+					}
+					else if($resultado2==-1){
+						
+						echo "<p> No son Iguales </p>";
+					}
+		
+				?>
 		
 	</body>
 
