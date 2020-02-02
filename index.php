@@ -10,11 +10,22 @@
 				font-weight: bold;
 			}
 			
+			.titulo{
+				
+				text-align: center;
+				color: aqua;
+				font-size: 3em;
+				font-weight: bold;
+				
+			}
+			
 		</style>
 		
 	</head>
 	
 	<body>
+		
+		<h1 class="titulo">CURSO PHP</h1>
 		
 		<h1>Uso de comentarios en Php</h1>
 			
