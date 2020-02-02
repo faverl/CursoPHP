@@ -14,7 +14,7 @@
 			var $color;	
 			var $motor;
 			
-			function Vehiculo(){ //Metodo Contructor;
+			function __construct(){ //Metodo Contructor;
 				
 				$this->color="";
 				$this->motor="1600cc";
@@ -22,18 +22,25 @@
 
 			function acelerar(){
 				
-				echo("Se esta acelerando");
+				echo "Se esta acelerando";
 
 			}
 
 			function frenar(){
-				echo("Se esta frenando");
+				echo "Se esta frenando";
 			}
 
 			function girar(){
-				echo("Se esta girando");
+				echo "Se esta girando";
 			}
 		}
+	
+		$Mazda = new Vehiculo();
+	
+		echo $Mazda->acelerar() . "<br>";
+		$Mazda->color="Rojo";
+	
+		echo $Mazda->color;
 	
 	
 	?>
