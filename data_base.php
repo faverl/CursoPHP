@@ -29,7 +29,7 @@
 		mysqli_set_charset($conexion,"utf-8");
 
 		//Consulta a la DB.
-		$query = "select * from usuarios";
+		$query = "select * from artículos";
 
 		//Resultado de la consulta
 		$resulset = mysqli_query($conexion, $query);
