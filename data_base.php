@@ -35,10 +35,8 @@
 	
 	<?php
 		
-		$db_host="localhost";
-		$db_name="curso_php";
-		$db_user="root";
-		$db_pass="";
+		//Se agregan datos para realizar conexión.
+		require ("conexion_db.php");
 
 		//Se genera la conexion a la DB.
 		$conexion=mysqli_connect($db_host,$db_user,$db_pass,$db_name);
@@ -55,7 +53,7 @@
 		mysqli_set_charset($conexion,"utf-8");
 
 		//Consulta a la DB.
-		$query = "select * from artículos";
+		$query = "select * from articulos";
 
 		//Resultado de la consulta
 		$resulset = mysqli_query($conexion, $query);
@@ -97,10 +95,22 @@
 
 		echo "</table>";
 
+		//Insersion de datos en bases de datos
+		/*
+		$query = "INSERT INTO ARTICULOS (SECCION, NOMBRE_ARTICULO, FECHA, PAIS_DE_ORIGEN, PRECIO)
+				  VALUES ('DEPORTE', 'Silbato', '18/02/2020', 'Colombia', 5)";
+
+		$resultado = mysqli_query($conexion, $query);
+
+		echo $resultado;
+		*/
+
 		//Cerrra la conexión a la base de datos.
 		mysqli_close($conexion);
 	
 	?>
+
+
 	
 	
 </body>

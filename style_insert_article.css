@@ -1,0 +1,60 @@
+body{
+    background-color: #B8C1C1;
+}
+
+table{
+    border: 1px solid #FFFFFF;
+    margin: 20px auto;
+    border-collapse:collapse;
+    border-radius: 50px;
+}
+
+#form_insert{
+    padding: 15px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 40%;
+    height: 100%;
+    background-color: #6FBFC1;
+}
+
+
+
+td {
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    height: 10px;
+    width: 50%;
+    text-align: left;
+    padding: 12px;
+    color: blue;
+    font-size: 1.5em;
+}
+
+input {
+    border-radius:8px;
+    font-size: 1em;
+    width: 200px;
+    height: 30px;
+    background-color: #27E276;
+}
+
+#btnIngresar{
+    border: 1px solid #485BC4;
+    box-shadow: 5px 5px 20px white;
+    color: white;
+    font-size: 2em;
+    margin: 20px 5px 20px 5px;
+    border-radius: 25px;
+    width: 90%;
+    height: 50px;
+    background-color: #3451EF;
+}
+
+h1{
+    padding-top: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
